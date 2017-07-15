@@ -12,44 +12,53 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Google FONTS -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Montserrat:300,500|Nunito+Sans:200,300,400,600|Open+Sans:400,600|Prompt:100,200,300,400,500|Raleway:200,300,400,500|Roboto:100,300,400,500" rel="stylesheet">
 
 </head>
 <body>
-	<div class="container-fluid text-center"> 
-		
-		<div class="current-location">
-			<h>Current Location here</h1> 
+<div class="container">
+	<div class="artboard">
+		<div class="flex-location-date">
+			<div id="location">New York</div> 
+			<div id="date">Tuesday, July 11</div>
 		</div>
+		<div class="temp-icon-description">
+			<div class="temp column-left" id="temperature" >78&deg;</div>
+			<div class="column-right">
+				<img id="icon-weather"  class="right-top img-responsive" src="img/icon/02d.png"/>	
+				<div id="description" class="right-bottom">few clouds</div>	
+			</div>
+		</div>	
+		<div class="conditions-container">
+		<div class="container-names">
+			<div class="names humidity">humidity</div>
+			<div class="names wind">wind</div>
+			<div class="names hi-lo">
+				<div class="hi-lo-name">lo</div>
+				<div class="hi-lo-name">hi</div>
+			</div>  	
+		</div>
+		<div class="container-icons">
+			<div  class="icons humidity"><img src="img/conditions/humidity.png" height="35px"></div> 
+			<div class="icons wind"> <img src="img/conditions/wind.png" height="35px"></div>
+			<div class="icons lo-hi"><img src="img/conditions/hi-lo.png" height="35px"></div>
+		</div>
+		<div class="container-results">
+			<div class="results humidity" id="humidity">20%</div>
+			<div class="results wind" id="wind">9.5 mph<span id="direction">WS</span></div>
+			<div class="results min-max">
+				<div class="result" id="temp_min">69&deg;</div>
+				<div class="result" id="temp_max">89&deg;</div>
+			</div>
+		</div>
+     	<div id="unit" class="unit">°C </div> 	
+			<div id="cel-fah" class="text-center">celsius</div>
+	  	</div>	
+	 </div>
+</div>
 
-		<div class="current-date">
-			<h4>Current Date here </h4> 
-		</div>
-
-		<div class="current-temperature">
-			<a class="weather-icon">Weather Icon here</a>
-			<h1>Current Temperature here </h1>  
-		</div>
-		<div class="low-hi">
-			<ul>
-				<li><a class="high-temp"></a>High temp</li>
-				<li><a class="low-temp"></a>Low temp</li>
-			</ul>	
-		</div>
-		<div class="wind">
-			<h6>Current Wind here </h6> 
-		</div>
-		<div class="celsius">
-			<a> Switch to Celsius Icone here</a>
-		</div>
-
-	</div>
-
-
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script> 
+	           	
 </body>
 </html>
